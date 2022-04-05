@@ -1,7 +1,7 @@
  
 <template>
   
-  <div id="app" class='white'>
+  <div id="app" class='blue-grey lighten-5'>
     <!-- navbar -->
     <div class="navbar-fixed">
       <nav>
@@ -50,7 +50,7 @@
 
      <!-- MENU LATERAL -->
      
-    <div class="row light ">
+    <div class="row blue-grey lighten-5">
       
       <div class="fixed-action-btn">
         <a class="btn-floating btn-large red">
@@ -67,8 +67,8 @@
     <!-- MENU LATERAL -->
       <div class='col m1 s1 l1 no-padding ' >   
           <div class=" submenu center-align z-depth-5">
-              <div >
-                <a href="" class=" center-align tooltipped" data-position="right" data-tooltip="Plantas"><i class="material-icons">forest</i></a>
+              <div>
+                <router-link to="/plantas" class=" tooltipped" data-position="right" data-tooltip="Plantas" ><i class="material-icons">forest</i></router-link>
               </div>
               <div>
                 <a href="" class=" center-align tooltipped" data-position="right" data-tooltip="Medidas"><i class="material-icons">architecture</i></a>
@@ -89,22 +89,8 @@
       </div>
     <!-- CUERPO DE LA PAGINA -->
       <div class="col m11 s11 l11 no-padding ">
-        
-          <!-- breadcrumps -->
-          <div class="link">
-            <nav>
-              <div class=" row nav-wrapper white black-text">
-                <div class='left col s3 l9 m8 '><h3>Plantas</h3></div>
-                <div class="right col s9 l3 m4 blue-text">
-                  <a href="#!" class="breadcrumb blue-text">Plantas</a>
-                  <a href="#!" class="breadcrumb blue-text">Second</a>
-                  <a href="#!" class="breadcrumb blue-text">Third</a>
-                </div>
-              </div>
-            </nav>
-          </div>
 
-        <div class="cuerpo">
+        <div class="p2 white z-depth-2" >
           <router-view/>
         </div>
       </div>
@@ -118,7 +104,7 @@
   </div>
 </template>
 
-/* estilos css */
+
 <style scoped>
   .submenu div{
     margin-top:20%;
@@ -133,9 +119,9 @@
     height:100%;
     width:8%;
   }
-  .cuerpo{
-    margin: 2%;
-    background-color: whitesmoke;
+  .p2{
+    margin: 1%;
+    padding-left:1%;
   }
     /*.no-padding{
       padding:0%;
